@@ -1,0 +1,39 @@
+INFO     log:test_03_raysync_session.py:37 *************** 获取token ***************
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> null
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604368951,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:test_03_raysync_session.py:11 先获取token
+INFO     log:test_03_raysync_session.py:39 *************** 执行命令行传输任务 ***************
+INFO     log:test_03_raysync_session.py:41 *************** 开始执行用例 ***************
+INFO     log:rest_client.py:51 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+INFO     log:rest_client.py:52 接口请求方式 ==>> POST
+INFO     log:rest_client.py:54 接口请求头 ==>> null
+INFO     log:rest_client.py:55 接口请求 params 参数 ==>> null
+INFO     log:rest_client.py:56 接口请求体 data 参数 ==>> null
+INFO     log:rest_client.py:57 接口请求体 json 参数 ==>> {
+    "action": "sessions",
+    "device": "",
+    "id": 1604368951,
+    "module": "WEBADMIN",
+    "token": "pz0nyGQMKEirN34wGsDpzxeYAgDNxl1Y1XI5Zli4",
+    "version": "3.0.3.2"
+}
+INFO     log:rest_client.py:58 接口上传附件 files 参数 ==>> None
+INFO     log:rest_client.py:59 接口 cookies 参数 ==>> null
+INFO     log:test_03_raysync_session.py:46 result ==>> 期望结果：0， 实际结果：【 0 】
+INFO     log:test_03_raysync_session.py:47 message ==>> 期望结果：OK， 实际结果：【 OK 】
+INFO     log:test_03_raysync_session.py:48 传输任务列表数量 ==>> 期望结果：0， 实际结果：【 0 】
+INFO     log:test_03_raysync_session.py:49 *************** 结束执行用例 ***************

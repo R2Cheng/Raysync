@@ -1,0 +1,35 @@
+login:
+  # 账号，密码，期望结果,期望返回信息
+  # account,password,result, message
+  - ["admin","Test!123",0, "OK"]
+  - ["ssssssss","Test!123",1002,"Account invalid"]
+  - ["admin","XXXXXXXXXX",1005,"Password invalid"]
+
+logout:
+  # token,期望结果,期望返回信息
+  # token,result, message
+  - ["正常获取",0,"OK"]
+  - ["",1009,"Invalid token"]
+  - [Null,1046,"illegal request"]
+
+UPDATE_ADMIN:
+  #旧密码，新密码，期望结果，期望返回信息
+  #oldPassword,newPassword,result, message
+  - ["Test!123","Test!123",0,"OK"]
+  - ["ErrorPasswd123","ErrorPasswd123",1005,"Password invalid"]
+  - ["Test!123","12345678",1023,"Incorrect password format"]
+  - ["Test!123","abcdefgh",1023,"Incorrect password format"]
+  - ["Test!123","ABCDEFGH",1023,"Incorrect password format"]
+
+UPDATE_SERVER:
+  #服务器名称，服务器地址，UDP加速端口，UDP报文大小，出口带宽，压缩，激活码，期望结果，期望返回信息
+  #name,host,proxyPort,packageSize,outbounde,compression,license,result, message
+  - ["Raysync Servers","172.16.4.252",32001,1200,0,0,"57d7ccc66356e",0,"OK"]
+  - ["Raysync Servers","172.16.4.252",320012,1200,0,0,"57d7ccc66356e",1029,"Invalid UDP port"]
+  - ["Raysync Servers","172.16.4.252",32001,1800,0,0,"57d7ccc66356e",1036,"Invalid package size, only 600 ~ 1442"]
+
+SET_USER_HOME_COUNT_PERIOD:
+  #小时周期，期望结果，期望返回信息
+  #time,result,message
+  - [48,0,"OK"]
+

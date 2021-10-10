@@ -1,0 +1,540 @@
+test_raysync_login:
+  account: "admin"
+  password: "Test!123"
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_update_admin_01:
+  oldpasswd: "Test!123"
+  newpasswd: "Ruiyun123"
+  errorpasswd: "12345678"
+  oldaccount: "admin"
+  newaccount: "supper"
+  except_result: 0
+  except_msg: "OK"
+  except_result1: 1005
+  except_msg1: Password invalid
+  except_result2: 1023
+  except_msg2: Incorrect password format
+
+test_raysync_update_admin_02:
+  oldpasswd: "Test!123"
+  newpasswd: "Ruiyun123"
+  errorpasswd: "12345678"
+  oldaccount: "admin"
+  newaccount: "supper"
+  except_result: 0
+  except_msg: "OK"
+  except_result1: 1023
+  except_msg1: Incorrect password format
+
+test_raysync_update_admin_03:
+  oldpasswd: "Test!123"
+  newpasswd: "Ruiyun123"
+  errorpasswd: "12345678"
+  oldaccount: "admin"
+  newaccount: "supper"
+  except_result: 1005
+  except_msg: "Password invalid"
+
+test_raysync_update_admin_04:
+  oldpasswd: "Test!123"
+  newpasswd: "Ruiyun123"
+  oldaccount: "admin"
+  newaccount: "supper"
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_session_01:
+  #无传输任务
+  #status 传输状态 False为无任务传输  sessions_num  传输任务数
+  status : False
+  except_result: 0
+  except_msg: "OK"
+  sessions_num : 0
+
+test_raysync_session_02:
+  #单任务传输任务
+  #status 传输状态 False为无任务传输  sessions_num  传输任务数
+  status : True
+  except_result: 0
+  except_msg: "OK"
+  sessions_num : 1
+
+test_raysync_session_03:
+  #多任务传输任务
+  #status 传输状态 False为无任务传输  sessions_num  传输任务数
+  status : True
+  except_result: 0
+  except_msg: "OK"
+  sessions_num : 3
+
+test_raysync_sharelink_01:
+  #邀请上传  查看邀请上传链接列表-列表为空--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量
+  stime : 2020-09-20 00:00:00
+  etime : 2020-12-30 00:00:00
+  totalCount : 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_sharelink_02:
+  #查看邀请上传链接列表-列表不为空，共6条链接（5条使用中（永久，1天，3天，7天，30天），默认参数（无需邮件通知），1条过期）--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量 useCount:有效数量  overCount：过期数量 cancelCount：取消数量
+  stime: 2020-09-20 00:00:00
+  etime: 2020-12-30 00:00:00
+  totalCount: 6
+  useCount: 5
+  overCount: 1
+  cancelCount: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_sharelink_03:
+  #查看邀请上传链接列表-列表不为空,共6条链接（5条使用中（永久，1天，3天，7天，30天）--过期链接和取消邀请链接url测试不通过--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量 useCount:有效数量  overCount：过期数量 cancelCount：取消数量
+  stime: 2020-09-20 00:00:00
+  etime: 2020-12-30 00:00:00
+  totalCount: 6
+  useCount: 0
+  overCount: 0
+  cancelCount: 6
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_sharelink_04:
+  #查看邀请上传链接列表-列表不为空,共6条链接（5条使用中（永久，1天，3天，7天，30天）--删除1个有效链接和1个过期链接--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量 useCount:有效数量  overCount：过期数量 cancelCount cancelCount：取消数量
+  stime: 2020-09-20 00:00:00
+  etime: 2020-12-30 00:00:00
+  totalCount: 4
+  useCount: 4
+  overCount: 0
+  cancelCount: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_sharelink_two_01:
+  #查看分享下载链接列表-列表为空--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量
+  stime: 2020-09-20 00:00:00
+  etime: 2020-12-30 00:00:00
+  totalCount: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_sharelink_two_02:
+  #查看分享下载链接列表-列表不为空，共6条链接（5条使用中（永久，1天，3天，7天，30天），默认参数（无需邮件通知），"
+  #                  "1条过期，所有链接没有有效下载文件，只测试链接）,有效链接验证通过--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量 useCount:有效数量  overCount：过期数量 cancelCount：取消数量
+  stime: 2020-09-20 00:00:00
+  etime: 2020-12-30 00:00:00
+  totalCount: 6
+  useCount: 5
+  overCount: 1
+  cancelCount: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_sharelink_two_03:
+  #查看分享下载链接列表-列表不为空--使用中和过期链接取消邀请上传成功，并验证url不通过--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量 useCount:有效数量  overCount：过期数量 cancelCount：取消数量
+  stime: 2020-09-20 00:00:00
+  etime: 2020-12-30 00:00:00
+  totalCount: 6
+  useCount: 0
+  overCount: 0
+  cancelCount: 6
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_sharelink_two_04:
+  #查看分享下载链接列表-列表不为空--删除1个有效链接和1个过期链接--预期成功
+  #stime,etime,查询时间段内邀请链接数量  totalCount: 链接数量 useCount:有效数量  overCount：过期数量 cancelCount cancelCount：取消数量
+  stime: 2020-09-20 00:00:00
+  etime: 2020-12-30 00:00:00
+  totalCount: 4
+  useCount: 4
+  overCount: 0
+  cancelCount: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_01:
+  #默认参数新用户创建-创建结果验证--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 1
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_02:
+  #默认参数新用户创建-使用账号首次登录修改密码验证--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 1
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_03:
+  #默认参数新用户创建-使用邮箱首次登录修改密码验证--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 1
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_04:
+  #默认参数新用户创建-使用账号登录前台后，进行姓名、账号、邮箱、权限、邮件发送方验证--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 1
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_05:
+  #默认参数新用户创建-权限rayfile-c验证--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 host 服务器地址
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  host: 172.16.4.252
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_06:
+  #默认参数新用户创建-权限rayfile-c验证--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 host 服务器地址
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 0
+  emailSenderType: 0
+  host: 172.16.4.252
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_07:
+  #默认参数新用户创建-各种权限组合使用前台接口验证--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱   emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  emailSenderType: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_08:
+  #新用户创建-全部权限（4095）用户组校验--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 groupName 用户组名 groupPermission组的权限
+  #groupPermission 用户组权限
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  groupName: test_group
+  groupPermission: 4095
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_user_09:
+  #新用户创建-没有权限（0）用户组校验--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 groupName 用户组名 groupPermission组的权限
+  #groupPermission 用户组权限
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  groupName: test_group
+  groupPermission: 0
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_syncSwitch_10:
+  #新用户创建-有同步目录功能校验--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 syncSwitch 同步目录权限
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  except_result: 0
+  syncSwitch: True
+  except_msg: "OK"
+
+test_raysync_create_uploadSuffixLimit_11:
+  #新用户创建-有文件格式白名单限制（没有输入文件后缀列表）--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  uploadSuffixLimit: 1
+  suffixList: []
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_uploadSuffixLimit_12:
+  #新用户创建-有文件格式白名单限制（输入exe，txt）--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 0
+  uploadSuffixLimit: 1
+  suffixList: ["exe","txt"]
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_emailSenderType_13:
+  #新用户创建-以用户配置邮箱发送--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 0
+  except_msg: "OK"
+
+test_raysync_create_whitelistIPSwitch_14:
+  #新用户创建-设置登录IP白名单（只开启，不设置白名单）--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 whitelistIPSwitch IP登录白名单 whitelistIP IP白名单限制列表，传入字符串
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 0
+  whitelistIPSwitch: True
+  whitelistIP: ""
+  except_msg: "OK"
+
+test_raysync_create_whitelistIPSwitch_15:
+  #新用户创建-设置登录IP白名单，设置多个ip地址，在非设置ip下登录失败--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 whitelistIPSwitch IP登录白名单 whitelistIP IP白名单限制列表，传入字符串
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 1093
+  whitelistIPSwitch: True
+  whitelistIP: "172.16.4.222;172.16.4.2"
+  except_msg: "IP not in whitelist"
+
+test_raysync_create_whitelistIPSwitch_16:
+  #新用户创建-设置登录IP白名单，设置多个ip地址，在设置ip下登录成功--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 whitelistIPSwitch IP登录白名单 whitelistIP IP白名单限制列表，传入字符串
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 0
+  whitelistIPSwitch: True
+  whitelistIP: "172.16.4.222;172.16.4.9"
+  except_msg: "OK"
+
+test_raysync_create_whitelistIPSwitch_17:
+  #新用户创建-设置登录IP白名单，设置多个ip地址，并设置正则匹配，在非设置ip下登录失败--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 whitelistIPSwitch IP登录白名单 whitelistIP IP白名单限制列表，传入字符串
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 1093
+  whitelistIPSwitch: True
+  whitelistIP: "172.16.4.222;172.16.4.2;172.16.4.[50-100]"
+  except_msg: "IP not in whitelist"
+
+test_raysync_create_whitelistIPSwitch_18:
+  #新用户创建-设置登录IP白名单，设置多个ip地址，并设置正则匹配，在设置ip下登录成功--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 whitelistIPSwitch IP登录白名单 whitelistIP IP白名单限制列表，传入字符串
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 0
+  whitelistIPSwitch: True
+  whitelistIP: "172.16.4.222;172.16.4.253;172.16.4.[1-100]"
+  except_msg: "OK"
+
+test_raysync_create_email_only_19:
+  #新用户创建-创建已存在的邮箱账号，创建失败--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 whitelistIPSwitch IP登录白名单 whitelistIP IP白名单限制列表，传入字符串
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 1014
+  except_msg: "Email already existed"
+
+test_raysync_create_account_only_20:
+  #新用户创建-创建已存在的账号，创建失败--预期成功
+  #name 姓名 account 账号 password 密码 needUpdatapwd 强制首次登录修改密码 email 邮箱  permission 权限  emailSenderType 邮件发送方 whitelistIPSwitch IP登录白名单 whitelistIP IP白名单限制列表，传入字符串
+  name: raysync_test
+  account: raysync_test
+  password: Test!123
+  needUpdatapwd: 0
+  email: raysync_test@email.com
+  permission: 4095
+  emailSenderType: 1
+  except_result: 1004
+  except_msg: "Account already existed"
+
+test_raysync_select_user_01:
+  #搜索用户姓名-中文搜索--预期成功
+  #query 检索内容  name 名字  account 账号 email 邮箱 is_online 状态  is_locked 锁定
+  query1:
+    name: 镭速
+    totalCount: 4
+  query2:
+    name: 镭速测试
+    totalCount: 1
+  query3:
+    name: 无搜索
+    totalCount: 0
+  except_result: 0
+  except_msg: OK
+
+test_raysync_select_user_02:
+  #搜索用户姓名-英文搜索--预期成功
+  #query 检索内容  name 名字  account 账号 email 邮箱 is_online 状态  is_locked 锁定
+  query1:
+    name: raysync_test
+    totalCount: 4
+  query2:
+    name: raysync_test_1
+    totalCount: 1
+  query3:
+    name: raysync_none
+    totalCount: 0
+  except_result: 0
+  except_msg: OK
+
+test_raysync_select_user_03:
+  #搜索用户账号-账号搜索--预期成功
+  #query 检索内容  name 名字  account 账号 email 邮箱 is_online 状态  is_locked 锁定
+  query1:
+    account: raysync_test_11
+    totalCount: 1
+  query2:
+    account: raysync_none
+    totalCount: 0
+  except_result: 0
+  except_msg: OK
+
+test_raysync_select_user_04:
+  #搜索用户邮箱-邮箱搜索--预期成功
+  #query 检索内容  name 名字  account 账号 email 邮箱 is_online 状态  is_locked 锁定
+  query1:
+    email: raysync_test_12@email.com
+    totalCount: 1
+  query2:
+    email: raysync_test_12
+    totalCount: 0
+  except_result: 0
+  except_msg: OK
+
+test_raysync_select_user_05:
+  #搜索用户状态-状态搜索--预期成功
+  #query 检索内容  name 名字  account 账号 email 邮箱 is_online 状态  is_locked 锁定
+  query1:
+    is_online: ""
+    totalCount: 16
+  query2:
+    is_online: True
+    totalCount: 5
+  query3:
+    is_online: False
+    totalCount: 11
+  except_result: 0
+  except_msg: OK
+
+test_raysync_select_user_06:
+  #搜索用户锁定状态-锁定状态搜索--预期成功
+  #query 检索内容  name 名字  account 账号 email 邮箱 is_online 状态  is_locked 锁定
+  query1:
+    is_locked: ""
+    totalCount: 16
+  query2:
+    is_locked: True
+    totalCount: 5
+  query3:
+    is_locked: False
+    totalCount: 11
+  except_result: 0
+  except_msg: OK
+
+test_raysync_select_user_07:
+  #全参数搜索-姓名-账号-邮箱-在线-非锁定状态搜索--预期成功
+  #query 检索内容  name 名字  account 账号 email 邮箱 is_online 状态  is_locked 锁定
+  query1:
+    name: 镭速
+    account: leisu3
+    email: leisu_test_3@email.com
+    is_online: True
+    is_locked: False
+    totalCount: 1
+  except_result: 0
+  except_msg: OK

@@ -1,0 +1,106 @@
+[2020-11-02 18:02:37,216][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 18:02:37,216][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 18:02:37,216][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 18:02:37,217][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 18:02:37,217][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 18:02:37,217][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604311357,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-11-02 18:02:37,217][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 18:02:37,217][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 18:02:37,253][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 18:02:37,253][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 18:02:37,253][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 18:02:37,253][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 18:02:37,253][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 18:02:37,253][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "SELECT_USERS",
+    "count": 10,
+    "device": "",
+    "id": 1604311357,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": "id",
+    "page": 1,
+    "query": {},
+    "token": "DGkb40LvA1SdNbYE9T4ZNQL5vVd5JqgKIxoA0OhT",
+    "version": "3.0.3.2"
+}
+[2020-11-02 18:02:37,253][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 18:02:37,254][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 18:02:37,291][test_07_raysync_select_user.py 34][INFO]: *************** 获取token ***************
+[2020-11-02 18:02:37,292][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 18:02:37,292][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 18:02:37,292][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 18:02:37,293][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 18:02:37,293][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 18:02:37,293][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604311357,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-11-02 18:02:37,293][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 18:02:37,293][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 18:02:37,328][test_07_raysync_select_user.py 13][INFO]: 先获取token
+[2020-11-02 18:02:37,328][test_07_raysync_select_user.py 36][INFO]: *************** 开始执行用例 ***************
+[2020-11-02 18:02:37,328][test_07_raysync_select_user.py 37][INFO]: *************** 搜索中文名相同多个用户结果检验 ***************
+[2020-11-02 18:02:37,328][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 18:02:37,328][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 18:02:37,328][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 18:02:37,328][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 18:02:37,328][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 18:02:37,329][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "SELECT_USERS",
+    "count": 10,
+    "device": "",
+    "id": 1604311357,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": "id",
+    "page": 1,
+    "query": {
+        "name": "镭速"
+    },
+    "token": "1O49vM3LK3cA89jqYu1oElQ5L05GomN8J9MMr0Qf",
+    "version": "3.0.3.2"
+}
+[2020-11-02 18:02:37,329][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 18:02:37,329][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 18:02:37,361][test_07_raysync_select_user.py 41][INFO]: 搜索用户结果result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-02 18:02:37,362][test_07_raysync_select_user.py 42][INFO]: 搜索用户结果message ==>> 期望结果：OK， 实际结果：【 OK 】
+[2020-11-02 18:02:37,362][test_07_raysync_select_user.py 50][INFO]: 搜索中文名相同多个用户结果totalCount ==>> 期望结果：4， 实际结果：【 4 】
+[2020-11-02 18:02:37,362][test_07_raysync_select_user.py 52][INFO]: *************** 搜索中文名一个用户结果检验 ***************
+[2020-11-02 18:02:37,362][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 18:02:37,362][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 18:02:37,362][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 18:02:37,362][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 18:02:37,363][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 18:02:37,363][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "SELECT_USERS",
+    "count": 10,
+    "device": "",
+    "id": 1604311357,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": "id",
+    "page": 1,
+    "query": {
+        "name": "镭速测试"
+    },
+    "token": "1O49vM3LK3cA89jqYu1oElQ5L05GomN8J9MMr0Qf",
+    "version": "3.0.3.2"
+}
+[2020-11-02 18:02:37,363][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 18:02:37,363][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 18:02:37,395][test_07_raysync_select_user.py 56][INFO]: 搜索用户结果result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-02 18:02:37,395][test_07_raysync_select_user.py 57][INFO]: 搜索用户结果message ==>> 期望结果：OK， 实际结果：【 OK 】

@@ -1,0 +1,1 @@
+{"uuid": "3449bce8-fd87-454e-b219-18048e581fc0", "children": ["c424383e-63fc-465b-a6c8-5c9d2c6026e2"], "befores": [{"name": "initAdmin", "status": "passed", "steps": [{"name": "前置步骤 ==>> 清理数据", "status": "passed", "start": 1604302574463, "stop": 1604302574463}], "start": 1604302573283, "stop": 1604302574464}], "start": 1604302573283, "stop": 1604302574610}

@@ -1,0 +1,223 @@
+[2020-11-03 10:15:54,566][test_06_raysync_create_user.py 388][INFO]: *************** 获取token ***************
+[2020-11-03 10:15:54,567][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:15:54,567][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:15:54,567][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:15:54,567][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:15:54,567][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:15:54,567][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604369754,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:15:54,567][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:15:54,567][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:15:54,607][test_06_raysync_create_user.py 13][INFO]: 先获取token
+[2020-11-03 10:15:54,608][test_06_raysync_create_user.py 390][INFO]: *************** 如创建用户存在，执行先删除改用户 ***************
+[2020-11-03 10:15:54,608][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:15:54,608][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:15:54,608][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:15:54,608][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:15:54,608][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:15:54,609][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "SELECT_USERS",
+    "count": 10,
+    "device": "",
+    "id": 1604369754,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": "id",
+    "page": 1,
+    "query": {
+        "account": "raysync_test"
+    },
+    "token": "ekMqLrZwnBt62mdvbtNJRWQ1wRyNOxa6eD8xCsQE",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:15:54,609][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:15:54,609][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:15:54,645][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:15:54,645][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:15:54,645][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:15:54,646][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:15:54,646][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:15:54,646][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "DELETE_USERS",
+    "clearData": false,
+    "device": "",
+    "id": 1604369754,
+    "module": "WEBADMIN",
+    "token": "ekMqLrZwnBt62mdvbtNJRWQ1wRyNOxa6eD8xCsQE",
+    "users": [
+        6
+    ],
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:15:54,646][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:15:54,646][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:15:54,678][test_06_raysync_create_user.py 34][INFO]: 创建用户存在，执行删除用户操作
+[2020-11-03 10:15:54,678][test_06_raysync_create_user.py 392][INFO]: *************** 开始执行用例 ***************
+[2020-11-03 10:15:54,678][test_06_raysync_create_user.py 393][INFO]: *************** 建立全部权限的用户 ***************
+[2020-11-03 10:15:54,678][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:15:54,679][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:15:54,679][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:15:54,679][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:15:54,679][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:15:54,679][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "CREATE_USER",
+    "module": "WEBADMIN",
+    "device": "",
+    "user": {
+        "name": "raysync_test",
+        "account": "raysync_test",
+        "password": "YwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+        "needUpdatePwd": 0,
+        "email": "raysync_test@email.com",
+        "home": "",
+        "exclude_list": [],
+        "permission": 4095,
+        "uploadSpeed": 0,
+        "downloadSpeed": 0,
+        "syncSwitch": false,
+        "address": "",
+        "uploadSuffixLimit": 0,
+        "suffixList": [],
+        "emailSenderType": 0,
+        "whitelistIPSwitch": false,
+        "whitelistIP": "",
+        "company": "",
+        "accountType": 2,
+        "created": 0,
+        "phone": "",
+        "remark": "",
+        "status": 0,
+        "authWay": "",
+        "groupIdList": ""
+    },
+    "groupIdList": [],
+    "id": 1604369754,
+    "token": "ekMqLrZwnBt62mdvbtNJRWQ1wRyNOxa6eD8xCsQE",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:15:54,679][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:15:54,679][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:15:54,713][test_06_raysync_create_user.py 400][INFO]: *************** 先创建用户文件夹及上传文件，避免因无文件导致判断失败 ***************
+[2020-11-03 10:15:57,547][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'upload', '-d', '/', '-s', 'E:\\testFile\\1M.txt']
+[2020-11-03 10:15:57,548][raysync_rayfile_c.py 107][INFO]: b'\r\r\x00E\x00:\x00/\x00t\x00e\x00s\x00t\x00F\x00i\x00l\x00e\x00/\x001\x00M\x00.\x00t\x00x\x00t\x00 \x00 \x00 \x00 \x00 \x00[\x00S\x00u\x00c\x00c\x00e\x00s\x00s\x00]\x00\r\x00\n\x00\r Total: [====================]  (1/1) 100%   Speed: 0B/s   Remaining time: ---\r\nUpload file completed. 1 file(s) was uploaded. failed: 0\r\n\r\n'
+[2020-11-03 10:16:00,798][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'upload', '-d', '/', '-s', 'E:\\testFile\\2M.txt']
+[2020-11-03 10:16:00,804][raysync_rayfile_c.py 107][INFO]: b'\r\r\x00E\x00:\x00/\x00t\x00e\x00s\x00t\x00F\x00i\x00l\x00e\x00/\x002\x00M\x00.\x00t\x00x\x00t\x00 \x00 \x00 \x00 \x00 \x00[\x00S\x00u\x00c\x00c\x00e\x00s\x00s\x00]\x00\r\x00\n\x00\r Total: [====================]  (1/1) 100%   Speed: 0B/s   Remaining time: ---\r\nUpload file completed. 1 file(s) was uploaded. failed: 0\r\n\r\n'
+[2020-11-03 10:16:03,299][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'mkdir', '-d', '/test1']
+[2020-11-03 10:16:03,299][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:05,233][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'mkdir', '-d', '/test2']
+[2020-11-03 10:16:05,233][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:05,236][test_06_raysync_create_user.py 52][INFO]: 账户文件及文件夹初始化结果为：NoneNone00
+[2020-11-03 10:16:05,237][test_06_raysync_create_user.py 402][INFO]: *************** 使用account登录验证 ***************
+[2020-11-03 10:16:05,237][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/rayfile
+[2020-11-03 10:16:05,237][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:16:05,237][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:16:05,238][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:16:05,238][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:16:05,238][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "Kk0w4LAaV6Oo1r8lQPYEBq5MZE5bOmXNI3rrr6oDk0qxX5J3WNjMd2GmRZeDpyzbYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604369765,
+    "module": "WEBUI",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:16:05,238][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:16:05,238][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:16:05,283][test_06_raysync_create_user.py 406][INFO]: 使用account登录验证结果result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-03 10:16:05,284][test_06_raysync_create_user.py 407][INFO]: 使用account登录验证信息message ==>> 期望结果：OK， 实际结果：【 OK 】
+[2020-11-03 10:16:05,284][test_06_raysync_create_user.py 409][INFO]: *************** 修改用户权限为全部禁止 ***************
+[2020-11-03 10:16:05,284][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:16:05,285][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:16:05,285][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:16:05,285][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:16:05,285][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:16:05,285][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "UPDATE_USER",
+    "module": "WEBADMIN",
+    "device": "",
+    "user": {
+        "name": "raysync_test",
+        "account": "raysync_test",
+        "password": "YwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+        "needUpdatePwd": 0,
+        "email": "raysync_test@email.com",
+        "home": "",
+        "addExcludeList": [],
+        "permission": 0,
+        "uploadSpeed": 0,
+        "downloadSpeed": 0,
+        "syncSwitch": false,
+        "address": "",
+        "uploadSuffixLimit": 0,
+        "suffixList": [],
+        "emailSenderType": 0,
+        "whitelistIPSwitch": false,
+        "whitelistIP": "",
+        "company": "",
+        "accountType": 2,
+        "created": 1604369765,
+        "id": 7,
+        "phone": "",
+        "remark": "",
+        "status": 0,
+        "authWay": "",
+        "groupIdList": ""
+    },
+    "addGroupIdList": [],
+    "delGroupIdList": [],
+    "id": 1604369765,
+    "token": "ekMqLrZwnBt62mdvbtNJRWQ1wRyNOxa6eD8xCsQE",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:16:05,286][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:16:05,286][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:16:05,325][test_06_raysync_create_user.py 415][INFO]: 修改用户权限为全部禁止result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-03 10:16:05,325][test_06_raysync_create_user.py 416][INFO]: 修改用户权限为全部禁止message ==>> 期望结果：OK， 实际结果：【 OK 】
+[2020-11-03 10:16:05,326][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/rayfile
+[2020-11-03 10:16:05,326][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:16:05,326][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:16:05,326][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:16:05,327][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:16:05,327][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "Kk0w4LAaV6Oo1r8lQPYEBq5MZE5bOmXNI3rrr6oDk0qxX5J3WNjMd2GmRZeDpyzbYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604369765,
+    "module": "WEBUI",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:16:05,327][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:16:05,327][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:16:15,375][test_06_raysync_create_user.py 419][INFO]: *************** rayfile-c权限验证 ***************
+[2020-11-03 10:16:18,191][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'upload', '-d', '/', '-s', 'E:\\testFile\\44M.txt']
+[2020-11-03 10:16:18,191][raysync_rayfile_c.py 107][INFO]: b'\r\r\x00\r Total: [                    ]  (1/1)   0%   Speed: 0B/s   Remaining time: ---\r\nUpload file completed. 1 file(s) was uploaded. failed: 1\r\n\r\n'
+[2020-11-03 10:16:21,002][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'download', '-d', 'E:\\testFile\\download', '-s', '/1M.txt']
+[2020-11-03 10:16:21,002][raysync_rayfile_c.py 107][INFO]: b'\r\r\x00\r Total: [                    ]  (0/1)   0%   Speed: 0B/s   Remaining time: ---\r\nDownload file completed. 1 file(s) was downloaded. failed: 1\r\n\r\n'
+[2020-11-03 10:16:22,957][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'mkdir', '-d', '/cmdmkdir']
+[2020-11-03 10:16:22,957][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:24,991][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'rename', '-d', 'test5', '-s', '/test2']
+[2020-11-03 10:16:24,992][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:27,058][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'copy', '-d', '/test1/test.txt', '-s', '/2M.txt']
+[2020-11-03 10:16:27,059][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:29,082][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'move', '-d', '/test1/ssss.txt', '-s', '/2M.txt']
+[2020-11-03 10:16:29,082][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:31,010][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'remove', '-s', '/test1']
+[2020-11-03 10:16:31,010][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:33,028][raysync_rayfile_c.py 106][INFO]: ['C:\\Program Files (x86)\\Raysync Client\\rayfile-c.exe', '-a', '172.16.4.252', '-P', '32001', '-u', 'raysync_test', '-w', 'Test!123', '-l', 'F:\\python_pro\\/rayfile_c.txt', '-o', 'list', '-d', '/']
+[2020-11-03 10:16:33,028][raysync_rayfile_c.py 107][INFO]: b''
+[2020-11-03 10:16:35,029][test_06_raysync_create_user.py 470][INFO]: list结果result ==>> 期望结果：16， 实际结果：【 16 】
+[2020-11-03 10:16:35,030][test_06_raysync_create_user.py 471][INFO]: list结果result ==>> 期望结果：16， 实际结果：【 16 】
+[2020-11-03 10:16:35,030][test_06_raysync_create_user.py 472][INFO]: list结果result ==>> 期望结果：16， 实际结果：【 16 】
+[2020-11-03 10:16:35,030][test_06_raysync_create_user.py 473][INFO]: list结果result ==>> 期望结果：16， 实际结果：【 16 】
+[2020-11-03 10:16:35,031][test_06_raysync_create_user.py 474][INFO]: list结果result ==>> 期望结果：16， 实际结果：【 16 】
+[2020-11-03 10:16:35,031][test_06_raysync_create_user.py 475][INFO]: list结果result ==>> 期望结果：16， 实际结果：【 16 】
+[2020-11-03 10:16:35,031][test_06_raysync_create_user.py 476][INFO]: list结果result ==>> 期望结果：0， 实际结果：【 16 】
+[2020-11-03 10:16:35,031][test_06_raysync_create_user.py 477][INFO]: list结果result ==>> 期望结果：16， 实际结果：【 16 】
+[2020-11-03 10:16:35,032][test_06_raysync_create_user.py 478][INFO]: *************** 结束执行用例 ***************

@@ -1,0 +1,142 @@
+[2020-11-03 10:34:35,713][test_06_raysync_create_user.py 671][INFO]: *************** 获取token ***************
+[2020-11-03 10:34:35,714][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:34:35,715][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:34:35,715][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:34:35,715][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:34:35,715][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:34:35,715][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604370875,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:34:35,715][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:34:35,716][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:34:35,812][test_06_raysync_create_user.py 13][INFO]: 先获取token
+[2020-11-03 10:34:35,813][test_06_raysync_create_user.py 673][INFO]: *************** 如创建用户存在，执行先删除该用户 ***************
+[2020-11-03 10:34:35,813][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:34:35,813][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:34:35,814][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:34:35,814][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:34:35,814][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:34:35,814][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "SELECT_USERS",
+    "count": 10,
+    "device": "",
+    "id": 1604370875,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": "id",
+    "page": 1,
+    "query": {
+        "account": "raysync_test"
+    },
+    "token": "90lBQwNXgBUgakY79SGZxKOd6rR45gKpezp6Sn34",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:34:35,814][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:34:35,815][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:34:35,859][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:34:35,859][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:34:35,859][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:34:35,860][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:34:35,860][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:34:35,860][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "DELETE_USERS",
+    "clearData": false,
+    "device": "",
+    "id": 1604370875,
+    "module": "WEBADMIN",
+    "token": "90lBQwNXgBUgakY79SGZxKOd6rR45gKpezp6Sn34",
+    "users": [
+        4104
+    ],
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:34:35,860][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:34:35,860][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:34:35,898][test_06_raysync_create_user.py 34][INFO]: 创建用户存在，执行删除用户操作
+[2020-11-03 10:34:35,898][test_06_raysync_create_user.py 675][INFO]: *************** 开始执行用例 ***************
+[2020-11-03 10:34:35,899][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:34:35,899][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:34:35,899][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:34:35,899][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:34:35,899][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:34:35,900][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "CREATE_USER",
+    "module": "WEBADMIN",
+    "device": "",
+    "user": {
+        "name": "raysync_test",
+        "account": "raysync_test",
+        "password": "YwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+        "needUpdatePwd": 0,
+        "email": "raysync_test@email.com",
+        "home": "",
+        "exclude_list": [],
+        "permission": 4095,
+        "uploadSpeed": 0,
+        "downloadSpeed": 0,
+        "syncSwitch": true,
+        "address": "",
+        "uploadSuffixLimit": 0,
+        "suffixList": [],
+        "emailSenderType": 0,
+        "whitelistIPSwitch": false,
+        "whitelistIP": "",
+        "company": "",
+        "accountType": 2,
+        "created": 0,
+        "phone": "",
+        "remark": "",
+        "status": 0,
+        "authWay": "",
+        "groupIdList": ""
+    },
+    "groupIdList": [],
+    "id": 1604370875,
+    "token": "90lBQwNXgBUgakY79SGZxKOd6rR45gKpezp6Sn34",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:34:35,900][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:34:35,900][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:34:35,944][test_06_raysync_create_user.py 682][INFO]: *************** 使用account登录验证 ***************
+[2020-11-03 10:34:35,945][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/rayfile
+[2020-11-03 10:34:35,945][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:34:35,945][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:34:35,945][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:34:35,945][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:34:35,946][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "Kk0w4LAaV6Oo1r8lQPYEBq5MZE5bOmXNI3rrr6oDk0qxX5J3WNjMd2GmRZeDpyzbYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604370875,
+    "module": "WEBUI",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:34:35,946][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:34:35,946][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:34:36,036][test_06_raysync_create_user.py 686][INFO]: 使用account登录验证result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-03 10:34:36,037][test_06_raysync_create_user.py 687][INFO]: 使用account登录验证message ==>> 期望结果：OK， 实际结果：【 OK 】
+[2020-11-03 10:34:36,037][test_06_raysync_create_user.py 689][INFO]: *************** 同步目录验证 ***************
+[2020-11-03 10:34:36,037][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/api
+[2020-11-03 10:34:36,037][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:34:36,037][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:34:36,038][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:34:36,038][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:34:36,038][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "GET_COMPLEX_SYNC_SWITCH_NO_VERSION",
+    "data": {
+        "userId": 4105
+    },
+    "module": "WEBUI",
+    "token": "OVbr4WNwmd4CyEn9W5Ud9Rg1QL37ejoEyEXzKVzB",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:34:36,038][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:34:36,038][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:34:36,075][test_06_raysync_create_user.py 696][INFO]: 同步目录验证syncSwitch ==>> 期望结果：True， 实际结果：【 True 】
+[2020-11-03 10:34:36,075][test_06_raysync_create_user.py 697][INFO]: *************** 结束执行用例 ***************

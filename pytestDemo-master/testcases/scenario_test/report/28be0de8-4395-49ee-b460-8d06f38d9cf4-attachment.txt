@@ -1,0 +1,39 @@
+[2020-11-03 10:08:43,325][test_03_raysync_session.py 37][INFO]: *************** 获取token ***************
+[2020-11-03 10:08:43,326][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:08:43,326][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:08:43,326][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:08:43,327][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:08:43,327][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:08:43,327][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604369323,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:08:43,327][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:08:43,327][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:08:43,362][test_03_raysync_session.py 11][INFO]: 先获取token
+[2020-11-03 10:08:43,362][test_03_raysync_session.py 39][INFO]: *************** 执行命令行传输任务 ***************
+[2020-11-03 10:08:43,362][test_03_raysync_session.py 41][INFO]: *************** 开始执行用例 ***************
+[2020-11-03 10:08:43,362][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-03 10:08:43,362][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-03 10:08:43,363][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-03 10:08:43,363][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-03 10:08:43,363][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-03 10:08:43,363][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "sessions",
+    "device": "",
+    "id": 1604369323,
+    "module": "WEBADMIN",
+    "token": "nplerbjAv9hE7GnWVUJGmr05Z19KBmDonTfV7efm",
+    "version": "3.0.3.2"
+}
+[2020-11-03 10:08:43,363][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-03 10:08:43,363][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-03 10:08:43,394][test_03_raysync_session.py 46][INFO]: result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-03 10:08:43,394][test_03_raysync_session.py 47][INFO]: message ==>> 期望结果：OK， 实际结果：【 OK 】
+[2020-11-03 10:08:43,394][test_03_raysync_session.py 48][INFO]: 传输任务列表数量 ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-03 10:08:43,394][test_03_raysync_session.py 49][INFO]: *************** 结束执行用例 ***************

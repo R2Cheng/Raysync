@@ -1,0 +1,8 @@
+init_admin_user:
+  username: "wintest"
+  password: "123456"
+
+init_sql:
+  initadmin: "UPDATE t_admin SET `password`='fcouqwnlC2Y4J1EvGi6b3RTgTZjPv9hTd10a73fea16ea35fdd3c205282ac3aba863e38dcbf55a9c402b789f1d61ab2df',`account`='admin' WHERE id=1;"
+  delete_register_user: "DELETE FROM user WHERE username = '测试test'"
+  update_user_telephone: "UPDATE user SET telephone = '13500010004' WHERE id = 4"

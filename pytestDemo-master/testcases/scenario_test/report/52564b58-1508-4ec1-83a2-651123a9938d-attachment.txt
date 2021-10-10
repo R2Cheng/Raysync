@@ -1,0 +1,396 @@
+[2020-10-29 18:55:49,747][test_04_raysync_sharelink.py 210][INFO]: *************** 获取token ***************
+[2020-10-29 18:55:49,748][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:49,748][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:49,748][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:49,748][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:49,748][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:49,748][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1603968949,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:49,748][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:49,749][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:49,811][test_04_raysync_sharelink.py 12][INFO]: 先获取token
+[2020-10-29 18:55:49,811][test_04_raysync_sharelink.py 212][INFO]: *************** 执行清空邀请上传链接操作 ***************
+[2020-10-29 18:55:49,812][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:49,812][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:49,812][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:49,812][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:49,812][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:49,812][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "accountType": 0,
+    "action": "GET_ALL_SHARELINK",
+    "count": 10,
+    "device": "",
+    "id": 1603968949,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": 2,
+    "page": 1,
+    "selectEndTime": 1603987200,
+    "selectShareStatus": 0,
+    "selectStartTime": 1600531200,
+    "selectUserId": 0,
+    "token": "aDkPlwqdQouPVOb7gC7y2ko8BjM9658NgPOrtEAf",
+    "type": 0,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:49,813][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:49,813][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:49,843][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:49,843][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:49,843][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:49,843][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:49,843][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:49,844][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "DEL_SHARELINK",
+    "device": "",
+    "id": 1603968949,
+    "module": "WEBADMIN",
+    "token": "aDkPlwqdQouPVOb7gC7y2ko8BjM9658NgPOrtEAf",
+    "url": [
+        "http://172.16.4.252:8090/share/hfgqtNQ0YoBRidjAVvra",
+        "http://172.16.4.252:8090/share/zvKMfZrA9I5nc8GjladO",
+        "http://172.16.4.252:8090/share/firGVlBdDq0Y3Q4uysLw",
+        "http://172.16.4.252:8090/share/27QjcsJL8UoMTEhrefS3",
+        "http://172.16.4.252:8090/share/MyTRK0zWcSZOmgN8xo4C",
+        "http://172.16.4.252:8090/share/rSLyxNQgBG5dAUEpsMhi"
+    ],
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:49,844][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:49,844][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:49,877][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:49,878][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:49,878][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:49,878][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:49,878][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:49,878][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "accountType": 0,
+    "action": "GET_ALL_SHARELINK",
+    "count": 10,
+    "device": "",
+    "id": 1603968949,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": 2,
+    "page": 1,
+    "selectEndTime": 1603987200,
+    "selectShareStatus": 0,
+    "selectStartTime": 1600531200,
+    "selectUserId": 0,
+    "token": "aDkPlwqdQouPVOb7gC7y2ko8BjM9658NgPOrtEAf",
+    "type": 0,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:49,878][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:49,879][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:49,906][test_04_raysync_sharelink.py 214][INFO]: *************** 执行邀请上传链接数据初始化操作 ***************
+[2020-10-29 18:55:49,907][test_04_raysync_sharelink.py 33][INFO]: 获取前台登录token，userId
+[2020-10-29 18:55:49,907][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/rayfile
+[2020-10-29 18:55:49,907][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:49,907][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:49,907][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:49,907][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:49,907][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "MejEvj6MwE80pWG3zLb1yo4aABQnGO4QYbYz5nKeVXlx2DdRPk5N9OJrYZmv4LaRYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1603968949,
+    "module": "WEBUI",
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:49,908][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:49,908][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:49,946][test_04_raysync_sharelink.py 37][INFO]: 创建邀请上传链接
+[2020-10-29 18:55:49,947][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/api
+[2020-10-29 18:55:49,947][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:49,947][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:49,947][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:49,947][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:49,947][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "account": "test1",
+    "accountType": 2,
+    "action": "CREATEURL",
+    "device": "",
+    "emailLanguage": 0,
+    "id": 1603968949,
+    "module": "WEBUI",
+    "notifyEmail": "",
+    "shareAllowDownload": 1,
+    "shareBaseUrl": "http://172.16.4.252:8090/share/",
+    "shareEmail": "",
+    "shareEmailContent": "",
+    "shareExpireTime": 0,
+    "shareFiles": [
+        ""
+    ],
+    "shareServerPath": "/",
+    "shareSrcType": 2,
+    "shareUrlPasswd": "Rw6h",
+    "shareUrlType": 0,
+    "token": "8WkAlRm4pPIY0BlmPUJM2WAv4MJEXzoV0O6wU0eF",
+    "userId": 1,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:49,947][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:49,948][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:49,981][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/api
+[2020-10-29 18:55:49,981][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:49,981][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:49,981][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:49,981][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:49,982][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "account": "test1",
+    "accountType": 2,
+    "action": "CREATEURL",
+    "device": "",
+    "emailLanguage": 0,
+    "id": 1603968949,
+    "module": "WEBUI",
+    "notifyEmail": "",
+    "shareAllowDownload": 1,
+    "shareBaseUrl": "http://172.16.4.252:8090/share/",
+    "shareEmail": "",
+    "shareEmailContent": "",
+    "shareExpireTime": 1604055349,
+    "shareFiles": [
+        ""
+    ],
+    "shareServerPath": "/",
+    "shareSrcType": 2,
+    "shareUrlPasswd": "U6ei",
+    "shareUrlType": 0,
+    "token": "8WkAlRm4pPIY0BlmPUJM2WAv4MJEXzoV0O6wU0eF",
+    "userId": 1,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:49,982][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:49,982][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,017][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/api
+[2020-10-29 18:55:50,017][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,018][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,018][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,018][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,018][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "account": "test1",
+    "accountType": 2,
+    "action": "CREATEURL",
+    "device": "",
+    "emailLanguage": 0,
+    "id": 1603968950,
+    "module": "WEBUI",
+    "notifyEmail": "",
+    "shareAllowDownload": 1,
+    "shareBaseUrl": "http://172.16.4.252:8090/share/",
+    "shareEmail": "",
+    "shareEmailContent": "",
+    "shareExpireTime": 1604228150,
+    "shareFiles": [
+        ""
+    ],
+    "shareServerPath": "/",
+    "shareSrcType": 2,
+    "shareUrlPasswd": "476W",
+    "shareUrlType": 0,
+    "token": "8WkAlRm4pPIY0BlmPUJM2WAv4MJEXzoV0O6wU0eF",
+    "userId": 1,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,018][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,018][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,055][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/api
+[2020-10-29 18:55:50,055][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,055][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,055][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,056][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,056][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "account": "test1",
+    "accountType": 2,
+    "action": "CREATEURL",
+    "device": "",
+    "emailLanguage": 0,
+    "id": 1603968950,
+    "module": "WEBUI",
+    "notifyEmail": "",
+    "shareAllowDownload": 1,
+    "shareBaseUrl": "http://172.16.4.252:8090/share/",
+    "shareEmail": "",
+    "shareEmailContent": "",
+    "shareExpireTime": 1604573750,
+    "shareFiles": [
+        ""
+    ],
+    "shareServerPath": "/",
+    "shareSrcType": 2,
+    "shareUrlPasswd": "k7qL",
+    "shareUrlType": 0,
+    "token": "8WkAlRm4pPIY0BlmPUJM2WAv4MJEXzoV0O6wU0eF",
+    "userId": 1,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,056][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,056][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,090][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/api
+[2020-10-29 18:55:50,090][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,090][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,090][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,090][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,091][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "account": "test1",
+    "accountType": 2,
+    "action": "CREATEURL",
+    "device": "",
+    "emailLanguage": 0,
+    "id": 1603968950,
+    "module": "WEBUI",
+    "notifyEmail": "",
+    "shareAllowDownload": 1,
+    "shareBaseUrl": "http://172.16.4.252:8090/share/",
+    "shareEmail": "",
+    "shareEmailContent": "",
+    "shareExpireTime": 1606560950,
+    "shareFiles": [
+        ""
+    ],
+    "shareServerPath": "/",
+    "shareSrcType": 2,
+    "shareUrlPasswd": "TsPq",
+    "shareUrlType": 0,
+    "token": "8WkAlRm4pPIY0BlmPUJM2WAv4MJEXzoV0O6wU0eF",
+    "userId": 1,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,091][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,091][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,126][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:8090/api
+[2020-10-29 18:55:50,126][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,126][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,127][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,127][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,127][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "account": "test1",
+    "accountType": 2,
+    "action": "CREATEURL",
+    "device": "",
+    "emailLanguage": 0,
+    "id": 1603968950,
+    "module": "WEBUI",
+    "notifyEmail": "",
+    "shareAllowDownload": 1,
+    "shareBaseUrl": "http://172.16.4.252:8090/share/",
+    "shareEmail": "",
+    "shareEmailContent": "",
+    "shareExpireTime": 1603882550,
+    "shareFiles": [
+        ""
+    ],
+    "shareServerPath": "/",
+    "shareSrcType": 2,
+    "shareUrlPasswd": "XoOk",
+    "shareUrlType": 0,
+    "token": "8WkAlRm4pPIY0BlmPUJM2WAv4MJEXzoV0O6wU0eF",
+    "userId": 1,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,127][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,127][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,163][test_04_raysync_sharelink.py 216][INFO]: *************** 开始执行用例 ***************
+[2020-10-29 18:55:50,163][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:50,163][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,164][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,164][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,164][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,164][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "accountType": 0,
+    "action": "GET_ALL_SHARELINK",
+    "count": 10,
+    "device": "",
+    "id": 1603968950,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": 2,
+    "page": 1,
+    "selectEndTime": 1603987200,
+    "selectShareStatus": 0,
+    "selectStartTime": 1600531200,
+    "selectUserId": 0,
+    "token": "aDkPlwqdQouPVOb7gC7y2ko8BjM9658NgPOrtEAf",
+    "type": 0,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,164][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,164][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,194][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:50,194][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,194][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,194][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,194][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,194][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "DEL_SHARELINK",
+    "device": "",
+    "id": 1603968950,
+    "module": "WEBADMIN",
+    "token": "aDkPlwqdQouPVOb7gC7y2ko8BjM9658NgPOrtEAf",
+    "url": [
+        "http://172.16.4.252:8090/share/9xBsVyNMR4CJghdnr8lQ"
+    ],
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,195][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,195][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,223][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:50,223][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,223][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,223][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,223][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,223][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "DEL_SHARELINK",
+    "device": "",
+    "id": 1603968950,
+    "module": "WEBADMIN",
+    "token": "aDkPlwqdQouPVOb7gC7y2ko8BjM9658NgPOrtEAf",
+    "url": [
+        "http://172.16.4.252:8090/share/biMRxckqDUwdzIoJlrPN"
+    ],
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,223][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,224][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,253][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-10-29 18:55:50,254][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-10-29 18:55:50,254][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-10-29 18:55:50,254][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-10-29 18:55:50,254][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-10-29 18:55:50,254][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "accountType": 0,
+    "action": "GET_ALL_SHARELINK",
+    "count": 10,
+    "device": "",
+    "id": 1603968950,
+    "module": "WEBADMIN",
+    "order": 1,
+    "orderBy": 2,
+    "page": 1,
+    "selectEndTime": 1603987200,
+    "selectShareStatus": 0,
+    "selectStartTime": 1600531200,
+    "selectUserId": 0,
+    "token": "aDkPlwqdQouPVOb7gC7y2ko8BjM9658NgPOrtEAf",
+    "type": 0,
+    "version": "3.0.3.2"
+}
+[2020-10-29 18:55:50,254][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-10-29 18:55:50,255][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-10-29 18:55:50,282][test_04_raysync_sharelink.py 248][INFO]: result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-10-29 18:55:50,282][test_04_raysync_sharelink.py 249][INFO]: message ==>> 期望结果：OK， 实际结果：【 OK 】
+[2020-10-29 18:55:50,283][test_04_raysync_sharelink.py 250][INFO]: 邀请上传链接数量 ==>> 期望结果：4， 实际结果：【 4 】
+[2020-10-29 18:55:50,283][test_04_raysync_sharelink.py 251][INFO]: 邀请上传链接使用中数量 ==>> 期望结果：4， 实际结果：【 4 】
+[2020-10-29 18:55:50,283][test_04_raysync_sharelink.py 252][INFO]: 邀请上传链接过期数量 ==>> 期望结果：0， 实际结果：【 0 】
+[2020-10-29 18:55:50,283][test_04_raysync_sharelink.py 253][INFO]: 邀请上传链接取消数量 ==>> 期望结果：0， 实际结果：【 0 】
+[2020-10-29 18:55:50,283][test_04_raysync_sharelink.py 254][INFO]: *************** 结束执行用例 ***************

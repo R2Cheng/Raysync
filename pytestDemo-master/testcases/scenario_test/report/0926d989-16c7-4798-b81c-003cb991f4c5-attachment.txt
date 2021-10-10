@@ -1,0 +1,76 @@
+[2020-11-02 15:36:14,462][conftest.py 30][INFO]: ******************************
+[2020-11-02 15:36:14,462][conftest.py 31][INFO]: 前置步骤开始 ==>> 清理数据
+[2020-11-02 15:36:14,462][conftest.py 65][INFO]: 修改admin账户，恢复默认账号密码
+[2020-11-02 15:36:14,463][conftest.py 66][INFO]: 执行前置SQL：UPDATE t_admin SET `password`='fcouqwnlC2Y4J1EvGi6b3RTgTZjPv9hTd10a73fea16ea35fdd3c205282ac3aba863e38dcbf55a9c402b789f1d61ab2df',`account`='admin' WHERE id=1;
+[2020-11-02 15:36:14,465][test_02_raysync_updata_admin.py 31][INFO]: *************** 开始执行用例 ***************
+[2020-11-02 15:36:14,466][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 15:36:14,466][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 15:36:14,466][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 15:36:14,466][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 15:36:14,466][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 15:36:14,466][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwYwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "action": "login",
+    "device": "",
+    "id": 1604302574,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-11-02 15:36:14,466][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 15:36:14,466][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 15:36:14,502][test_02_raysync_updata_admin.py 10][INFO]: 先获取token
+[2020-11-02 15:36:14,503][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 15:36:14,503][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 15:36:14,503][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 15:36:14,504][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 15:36:14,504][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 15:36:14,504][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "UPDATE_ADMIN",
+    "adminId": 1,
+    "module": "WEBADMIN",
+    "device": "",
+    "id": 1604302574,
+    "newAccount": "admin",
+    "newPassword": "NbR4BMXN3VJpKWyxaeE1jzmq651YBBNOVOs3bO9L7926YGrQ5ol0vAkZPD8wOLdw",
+    "oldPassword": "YwkbGw2NMempQJBPoWKErO9lgQBMNevZ8a5c4Lp7xa5vRL31DdX0yz48AjZV6Y51",
+    "token": "wQVZEzeLXVse7BbyJSk4x6XwWXB3djYnQeBnj9WP",
+    "version": "3.0.3.2"
+}
+[2020-11-02 15:36:14,504][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 15:36:14,504][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 15:36:14,536][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 15:36:14,536][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 15:36:14,536][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 15:36:14,536][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 15:36:14,536][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 15:36:14,536][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "UK": "0Jy5NLeNJP5plYROv6zAmMd1DwknVE4V55wWGqboyVW2Qa30EZ48XBKjrG9xR4lwNbR4BMXN3VJpKWyxaeE1jzmq651YBBNOVOs3bO9L7926YGrQ5ol0vAkZPD8wOLdw",
+    "action": "login",
+    "device": "",
+    "id": 1604302574,
+    "module": "WEBADMIN",
+    "token": null,
+    "version": "3.0.3.2"
+}
+[2020-11-02 15:36:14,536][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 15:36:14,537][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 15:36:14,571][rest_client.py 51][INFO]: 接口请求地址 ==>> http://172.16.4.252:9090/admin/api
+[2020-11-02 15:36:14,571][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2020-11-02 15:36:14,571][rest_client.py 54][INFO]: 接口请求头 ==>> null
+[2020-11-02 15:36:14,571][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2020-11-02 15:36:14,571][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2020-11-02 15:36:14,572][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "action": "SELECT_ADMIN",
+    "adminId": 1,
+    "device": "",
+    "id": 1604302574,
+    "module": "WEBADMIN",
+    "token": "xk6BaENW88FLBDrozUbL8M3EW8Qjn9ORsODTpFuC",
+    "version": "3.0.3.2"
+}
+[2020-11-02 15:36:14,572][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2020-11-02 15:36:14,572][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2020-11-02 15:36:14,601][test_02_raysync_updata_admin.py 41][INFO]: result ==>> 期望结果：0， 实际结果：【 0 】
+[2020-11-02 15:36:14,601][test_02_raysync_updata_admin.py 42][INFO]: 登录结果 ==>> 期望结果：admin， 实际结果：【 admin 】
+[2020-11-02 15:36:14,601][test_02_raysync_updata_admin.py 43][INFO]: *************** 结束执行用例 ***************
